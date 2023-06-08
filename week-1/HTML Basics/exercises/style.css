@@ -1,0 +1,12 @@
+h1 {
+    color: green;
+  }
+
+div.solution{
+  background-color: gray;
+  border:1px solid darkgray;
+  padding:10px;
+}
+img{
+  height:200px;
+}

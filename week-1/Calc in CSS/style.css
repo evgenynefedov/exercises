@@ -1,0 +1,41 @@
+body, div, span{
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+/* exercise 1 -------------------------- */
+div.exercise1 >span{
+    display:inline-block;
+    height:100px;
+}
+.exercise1 span.firstSection{
+    width:calc(100% - 25px);
+    background-color: red;
+}
+.exercise1 span.secondSection{
+    width:20px;
+    background-color: green;
+}
+
+
+/* exercise 2 -------------------------- */
+div.exercise2 {
+    width:40%;
+    margin-top:10px;
+    background-color:gray;
+}
+div.exercise2 >span{
+    display:inline-block;
+    height:100px;
+    width:calc(100%/3 - 5px);
+}
+.exercise2 span.firstSection{
+    background-color:red;
+}
+.exercise2 span.secondSection{
+    background-color:green;
+}
+.exercise2 span.thirdSection{
+    background-color:blue;
+}
+

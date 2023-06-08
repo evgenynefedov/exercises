@@ -1,0 +1,153 @@
+/* --------------- exercise 1 ---------------------- */
+html, body{
+    margin:0;
+    padding:0;
+}
+.exercise1 .container{
+    width:100px;
+    height:100px;
+    position:relative;
+    background-color:blue;
+}
+.exercise1 .container .horizontal{
+    width:100px;
+    height:5px;
+    position:absolute;
+    top:20px;
+    left:0;
+    background-color:red;
+}
+.exercise1 .container .vertical{
+    width:5px;
+    height:100px;
+    position:absolute;
+    top:0;
+    left:10px;
+    background-color:red;
+}
+
+/* --------------- exercise 2 ---------------------- */
+.exercise2 .container{
+    width:300px;
+    height:200px;
+    border-radius:2px;
+    background-color:purple;
+    position:relative;
+}
+.exercise2 .xTitle{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+.exercise2 .yTitle{
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+.exercise2 ul.graph{
+    margin:0;
+    padding:0;
+    display:block;
+    position: absolute;
+    bottom:5px;
+    left:0px;
+    width:300px;
+    height:150px;
+}
+.exercise2 ul.graph li{
+    margin:0;
+    padding:0;
+    display: inline-block;
+    width:20px;
+    height:150px;
+    margin-left:10px;
+    margin-bottom:10px;
+    background-color:gray;
+}
+.exercise2 ul.graph li.col1{
+    height:20px;
+}
+.exercise2 ul.graph li.col2{
+    height:90px;
+}
+.exercise2 ul.graph li.col3{
+    height:150px;
+}
+.exercise2 ul.graph li.col4{
+    height:140px;
+}
+.exercise2 ul.graph li.col5{
+    height:120px;
+}
+.exercise2 ul.graph li.col6{
+    height:50px;
+}
+
+/* --------------- exercise 3 ---------------------- */
+.exercise3 .container{
+    width:300px;
+    height:200px;
+    position:relative;
+
+}
+.exercise3 .container .leftGrayBlock, .exercise3 .container .rightGrayBlock{
+    position:absolute;
+    left:0;
+    top:0;
+    width:60px;
+    height:60px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color:darkgray;
+}
+.exercise3 .container .rightGrayBlock{
+    right:0;
+    top:0;
+    left:auto;
+}
+.exercise3 .container .redBlock{
+    width:300px;
+    height:140px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: red;
+}
+.exercise3 .container .whiteBlock{
+    width:180px;
+    height:140px;
+    position:absolute;
+    left:60px;
+    top:0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+}
+/* --------------- exercise 4 ---------------------- */
+.exercise4 .container{
+    display:inline-block;
+    position: relative;
+    width:450px;
+    height:230px;
+    background-color: black;
+
+}
+.exercise4 .container .chocoPeace{
+    display:block;
+    float:left;
+    width:100px;
+    height:100px;
+    margin-left:10px;
+    margin-top:10px;
+    background-color: #66320E;
+}
+.exercise4 .container .redStrip{
+    background-color: darkred;
+    height:2px;
+    width:450px;
+    position: absolute;
+    top:114px;
+    left:0;
+}
