@@ -1,0 +1,73 @@
+html, body{
+    padding:0;
+    margin:0;
+}
+
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto 30px;
+    grid-template-areas: 
+    "c m"
+    "c f";
+    grid-gap: 0px;
+}
+
+.contacts{
+    display: grid;
+    padding:10px;
+    grid-area: c;
+    background-color:darkorchid;
+    align-content: start;
+    grid-auto-rows: min-content;
+    row-gap: 10px;
+    overflow-y: auto;
+}
+.contacts .subheader{
+    font-weight: bold;
+}
+.contacts .contact{
+    display: grid;
+    border-radius: 4px;
+    background-color: orchid;
+    padding:5px;
+}
+.form{
+    grid-area:  f;
+    display: grid;
+    grid-template-columns: auto 20%;
+    background-color: gray;
+}
+.form .send-button{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-variant:small-caps;
+    cursor: pointer;
+    background-color:darkorchid;
+}
+.form .send-button:hover{
+    background-color: orchid;
+}
+.messages{
+    display: grid;
+    grid-area:  m;
+    background-color: lightgray;
+    align-content: end;
+    grid-auto-rows: min-content;
+    row-gap: 10px;
+    padding:15px;
+    overflow-y: scroll;
+}
+.messages .message{
+    display: grid;
+    background-color: darkgray;
+    border-radius: 4px;
+    justify-self: start;
+    padding:10px;
+}
+.messages .from-me{
+    background-color:lightgreen;
+    justify-self: end;
+}

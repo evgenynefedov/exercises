@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0
+}
+
+#container{
+    display: grid;
+    grid-template-rows: 50px auto 30px;
+    height: 100vh;
+}
+.header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    column-gap: 10px;
+    padding:0px 10px;
+    align-items: center;
+    border-bottom:2px solid #ff96aa;
+}
+.header .logo img{
+    width:150px
+}
+.header .menu{
+    padding:0px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: start;
+    align-content: space-between;
+    column-gap: 20px;
+}
+.header .menu li{
+    font-size:17px;
+    color:#ff96aa;
+    font-family: "Montserrat", Sans-serif;
+    padding:0px 30px;
+    display:block;
+    text-align: center;
+    cursor: pointer;
+}
+.header .menu li:hover{
+    color:red;
+}
+.main{
+    background-color: lightgray;
+}
+.main{
+    display: grid;
+    padding:50px;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    "s c ab"
+    "s c as";
+    row-gap: 40px;
+    column-gap: 50px;
+}
+
+.main .sidemenu{
+    grid-area: s;
+}
+.main .sidemenu ul{
+    display: grid;
+    height: 100%;
+    row-gap: 10px;
+}
+.main .sidemenu ul li{
+    display: grid;
+    font-size:30px;
+    background-color: #fbeff2;
+    border-radius: 4px;
+    justify-content: center;
+    align-content: center;
+    color:darkgray;
+    cursor: pointer;
+}
+.main .sidemenu ul li:hover{
+    color:#ff96aa;
+}
+
+.main .content{
+    display: grid;
+    grid-area: c;
+    background-color: white;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+
+    border-radius: 4px;
+}
+.main .content>div{
+    padding:20px;
+    border-left:2px solid lightgray;
+}
+.main .content>div:first-child{
+    border:none;
+}
+.main .small{
+    grid-area: ab;
+}
+
+.main .big{
+    grid-area: as;
+}
+.main .ad-block{
+    display: grid;
+    grid-template-rows: 30px auto;
+}
+.main .ad-block .ad-header{
+    display: grid;
+    background-color: #ff96aa;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    padding:0px 20px;
+    color:#fff;
+    justify-content: start;
+    align-content: center;
+    
+}
+.main .ad-block .ad-content{
+    background-color: white;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+
+.footer{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    padding:0px 10px;
+    border-top:2px solid #ff96aa;
+}
