@@ -1,0 +1,60 @@
+#container{
+    width:400px;
+    background-color:#21BE9F;
+    border:3px solid #16A085;
+    border-radius: 4px;
+    margin:auto;
+    padding:10px;
+}
+form{
+    display:grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 
+    "n n"
+    "s b"
+    "p p"
+    "m st";
+}
+input{
+    height:40px;
+    width:100%;
+    padding:3px;
+    box-sizing: border-box;
+}
+.label{
+    padding-bottom:5px;
+}
+.name{
+    grid-area: n;
+}
+.salary{
+    grid-area: s;
+}
+.birthday{
+    grid-area: b;
+}
+.phone{
+    grid-area: p;
+}
+.message{
+    grid-area: m;
+    padding-top:10px;
+    font-size:12px;
+    color: darkmagenta;
+}
+.submit{
+    grid-area: st;
+    padding-top:10px;
+    justify-self: end;
+}
+.submit input{
+    margin:0px;
+    height:30px;
+    border:2px solid #000;
+    background-color:#16A085;
+    padding:0px 20px;
+    border-radius: 4px;
+}
