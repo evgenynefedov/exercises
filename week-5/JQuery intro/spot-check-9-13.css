@@ -1,0 +1,15 @@
+#div-which-will-be-removed{
+    margin:20px 0px;
+    background-color: aqua;
+    padding:20px;
+    width:300px;
+    box-sizing: border-box;
+}
+
+#blogs{
+    margin: 10px 0px;
+    border:2px blue solid;
+    padding:10px;
+    width:300px;
+    box-sizing: border-box;
+}

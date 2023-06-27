@@ -1,0 +1,31 @@
+.box1{
+    height:30px;
+    width:30px;
+    background-color: aqua;
+    border:1px solid gray;
+    box-sizing: border-box;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: purple;
+    display: inline-block;
+}
+
+#div-with-data{
+    margin:20px 0px;
+}
+#div-with-hover-event{
+    margin:20px 0px;
+    width:100px;
+    height:30px;
+}
+.yellow-background{
+    background-color: yellow;
+}
+.blue-background{
+    background-color: blue;
+}
+
+

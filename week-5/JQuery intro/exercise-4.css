@@ -1,0 +1,39 @@
+.item {
+  width: 100px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+}
+
+.cart-item {
+  margin: 5px 0px;
+}
+
+.cart-item span {
+  padding: 2px 5px;
+}
+
+.cart-item span.remove {
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: lightgray;
+  box-sizing: border-box;
+}
+
+.cart-item span.remove:hover {
+  background-color: lightsteelblue;
+}
+
+[data-instock="false"] {
+  color: gray;
+  font-weight: normal;
+}
+
+#cart {
+  margin: 10px;
+}
