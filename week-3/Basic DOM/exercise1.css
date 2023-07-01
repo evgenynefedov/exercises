@@ -7,8 +7,7 @@ body{
     height: 100vh;
     position: absolute;
     margin-left: 50%;
-    left: -250px;
-
+    left: -250px; 
 }
 
 #playing-field{
