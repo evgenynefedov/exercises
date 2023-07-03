@@ -1,0 +1,37 @@
+{
+    "Cow": {
+        "weight": {
+            "max": 500,
+            "min": 650,
+            "unit": "kg"
+        },
+        "habitat": ["anywhere"],
+        "endangered": false,
+        "foods": [
+            {"foodType": "plants", "foodPercantage": 0.9}, 
+            {"foodType": "some another food", "foodPercantage": 0.1}
+        ],
+        "raptors": ["people", "other beasts"],
+        "deliciousLevel":5
+    },
+
+    "Elephant": {
+        "weight": {
+            "max": 6.9,
+            "min": 1.9,
+            "unit": "t",
+            "bote": "weight depends on habitat and gender"
+        },
+        "habitat": ["Africa", "Asia", "Zoo"],
+        "endangered": true,
+        "foods": [
+            {"foodType": "ffffffff", "foodPercantage": 0.2}, 
+            {"foodType": "oooooooo", "foodPercantage": 0.3},
+            {"foodType": "oooooooo", "foodPercantage": 0.4}, 
+            {"foodType": "dddddddd", "foodPercantage": 0.1}
+        ],
+        "raptors": ["who", "knows"],
+        "deliciousLevel":0
+    }
+
+}
