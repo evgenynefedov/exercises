@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    
+</head>
+<body>
+    <script id="class-template" type="text/x-handlebars-template">
+        {{#each classmates}}
+            <p>{{name}} - {{description}}</p>
+        {{/each}}
+    </script>
+
+    <script id="menu-template" type="text/x-handlebars-template">
+        <ul>
+          {{#each menu}}
+            {{#if socialNetwork}}
+                <li><a href="{{link}}">{{name}}</a></li>
+            {{/if}}
+          {{/each}}
+        </ul>
+    </script>
+
+    <script id="companies-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each companies}}
+                {{#if isParticipant}}
+                    <li>
+                    {{name}}
+                        <ul>
+                            {{#each availableJobs}} 
+                                <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </script>
+
+    <script id="animals-template" type="text/x-handlebars-template">
+        <ul>
+            {{#each animals}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </script>
+
+    <script id="languages-template" type="text/x-handlebars-template">
+        <ol>
+            {{#each languages}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ol>
+    </script>
+    
+    <h1>Spot check 1</h1>
+    <div id="spotcheck-container-1"></div>
+
+    <h1>Spot check 2</h1>
+    <div id="spotcheck-container-2"></div>
+
+    <h1>Spot check 3</h1>
+    <div id="spotcheck-container-3"></div>
+
+    <h1>Spot check 4</h1>
+    <div id="spotcheck-container-4"></div>
+
+    <script src="spotcheck.js"></script>
+</body>
+</html>
