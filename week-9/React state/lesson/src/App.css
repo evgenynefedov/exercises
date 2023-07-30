@@ -1,0 +1,19 @@
+h1{
+    margin:0 0 10px 0;
+}
+.exercise{
+    margin:10px;
+    padding:10px;
+    background-color:lightblue;
+    border:darkblue 2px solid;
+}
+
+.landing{
+    border-bottom:1px solid black;
+    margin-bottom:10px;
+}
+
+button{
+    display: block;
+    margin: 0 0 10px 0;
+}
