@@ -1,0 +1,43 @@
+.exercise{
+  border:2px solid darkcyan;
+  background-color: lightblue;
+  margin:10px;
+  padding:5px 10px;
+  border-radius: 10px;
+  
+}
+h1{
+  margin:0 0 15px 0;
+  font-size:20px;
+}
+.time{
+  font-size: 25px;
+  font-family: monospace;
+  background-color: black;
+  color:white;
+  display: inline-block;
+  padding:5px 10px;
+  border-radius: 10px;
+}
+.ex2post{
+  width:100px;
+  display: inline-block;
+  padding: 5px;
+  font-size:10px;
+  margin:10px;
+  border:1px solid gray;
+  border-radius: 10px;
+  background-color: lightyellow;
+}
+
+.ex2post-mobile{
+  width:100%;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px;
+  font-size:10px;
+  margin:10px 0px;
+  border:1px solid gray;
+  border-radius: 10px;
+  background-color: lightyellow;
+}
