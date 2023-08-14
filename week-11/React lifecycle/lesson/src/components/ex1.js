@@ -11,7 +11,7 @@ function Ex1() {
     return (
         <div className="exercise">
             <h1>Exercise 1</h1>
-            <div class="time">{`${currentTime.getHours()}:${currentTime.getMinutes()}:${currentTime.getSeconds()}`}</div>
+            <div className="time">{`${currentTime.getHours()}:${currentTime.getMinutes()}:${currentTime.getSeconds()}`}</div>
         </div>
     );
 }
